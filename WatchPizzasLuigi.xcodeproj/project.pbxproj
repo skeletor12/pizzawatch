@@ -20,6 +20,12 @@
 		EE8FD1D91D426C9300C66DE1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1D81D426C9300C66DE1 /* ExtensionDelegate.swift */; };
 		EE8FD1DB1D426C9300C66DE1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1DA1D426C9300C66DE1 /* NotificationController.swift */; };
 		EE8FD1DD1D426C9300C66DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8FD1DC1D426C9300C66DE1 /* Assets.xcassets */; };
+		EE8FD1ED1D426D6C00C66DE1 /* vistaTamano.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1EC1D426D6C00C66DE1 /* vistaTamano.swift */; };
+		EE8FD1EF1D426EAA00C66DE1 /* enviotamano.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1EE1D426EAA00C66DE1 /* enviotamano.swift */; };
+		EE8FD1F11D426F4E00C66DE1 /* vistaMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1F01D426F4E00C66DE1 /* vistaMasa.swift */; };
+		EE8FD1F31D4272CE00C66DE1 /* vistaQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1F21D4272CE00C66DE1 /* vistaQueso.swift */; };
+		EE8FD1F71D427EA100C66DE1 /* vistaIngrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1F61D427EA100C66DE1 /* vistaIngrediente.swift */; };
+		EE8FD1F91D427F9600C66DE1 /* vistaConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FD1F81D427F9600C66DE1 /* vistaConfirmacion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +89,12 @@
 		EE8FD1DA1D426C9300C66DE1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		EE8FD1DC1D426C9300C66DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE8FD1DE1D426C9300C66DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8FD1EC1D426D6C00C66DE1 /* vistaTamano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaTamano.swift; sourceTree = "<group>"; };
+		EE8FD1EE1D426EAA00C66DE1 /* enviotamano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enviotamano.swift; sourceTree = "<group>"; };
+		EE8FD1F01D426F4E00C66DE1 /* vistaMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaMasa.swift; sourceTree = "<group>"; };
+		EE8FD1F21D4272CE00C66DE1 /* vistaQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaQueso.swift; sourceTree = "<group>"; };
+		EE8FD1F61D427EA100C66DE1 /* vistaIngrediente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaIngrediente.swift; sourceTree = "<group>"; };
+		EE8FD1F81D427F9600C66DE1 /* vistaConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaConfirmacion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +167,12 @@
 				EE8FD1DC1D426C9300C66DE1 /* Assets.xcassets */,
 				EE8FD1DE1D426C9300C66DE1 /* Info.plist */,
 				EE8FD1D41D426C9300C66DE1 /* Supporting Files */,
+				EE8FD1EC1D426D6C00C66DE1 /* vistaTamano.swift */,
+				EE8FD1EE1D426EAA00C66DE1 /* enviotamano.swift */,
+				EE8FD1F01D426F4E00C66DE1 /* vistaMasa.swift */,
+				EE8FD1F21D4272CE00C66DE1 /* vistaQueso.swift */,
+				EE8FD1F61D427EA100C66DE1 /* vistaIngrediente.swift */,
+				EE8FD1F81D427F9600C66DE1 /* vistaConfirmacion.swift */,
 			);
 			path = "WatchPizzasLuigi WatchKit Extension";
 			sourceTree = "<group>";
@@ -313,7 +331,13 @@
 			files = (
 				EE8FD1DB1D426C9300C66DE1 /* NotificationController.swift in Sources */,
 				EE8FD1D91D426C9300C66DE1 /* ExtensionDelegate.swift in Sources */,
+				EE8FD1F31D4272CE00C66DE1 /* vistaQueso.swift in Sources */,
 				EE8FD1D71D426C9300C66DE1 /* InterfaceController.swift in Sources */,
+				EE8FD1ED1D426D6C00C66DE1 /* vistaTamano.swift in Sources */,
+				EE8FD1EF1D426EAA00C66DE1 /* enviotamano.swift in Sources */,
+				EE8FD1F71D427EA100C66DE1 /* vistaIngrediente.swift in Sources */,
+				EE8FD1F11D426F4E00C66DE1 /* vistaMasa.swift in Sources */,
+				EE8FD1F91D427F9600C66DE1 /* vistaConfirmacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

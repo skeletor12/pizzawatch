@@ -1,16 +1,253 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchPizzasLuigi_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="LUIGI´S PIZZAS" id="t4Q-jK-tGN">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="18"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="center" title="CONFIGURAR" id="Kgz-DO-5in">
+                            <connections>
+                                <segue destination="k0c-ZZ-pYL" kind="push" id="gNP-7u-Dfz"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Vista Tamano-->
+        <scene sceneID="8W1-YK-A6r">
+            <objects>
+                <controller id="k0c-ZZ-pYL" customClass="vistaTamano" customModule="WatchPizzasLuigi_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="SELECCIONA TAMAÑO" textAlignment="center" id="nEJ-Zd-WO0">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                        </label>
+                        <button width="1" alignment="left" title="CHICA" id="FM2-FY-tjZ">
+                            <connections>
+                                <action selector="bachica" destination="k0c-ZZ-pYL" id="fOg-HJ-CRs"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="MEDIANA" id="gPY-X4-KGi">
+                            <connections>
+                                <action selector="bamediana" destination="k0c-ZZ-pYL" id="Bm0-3F-gGd"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="GRANDE" id="9yX-RQ-7qT">
+                            <connections>
+                                <action selector="BAGRANDE" destination="k0c-ZZ-pYL" id="tJV-0d-7Nx"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="bchica" destination="FM2-FY-tjZ" id="y8p-7L-cJi"/>
+                        <outlet property="bgrande" destination="9yX-RQ-7qT" id="s0y-CZ-bgq"/>
+                        <outlet property="bmediana" destination="gPY-X4-KGi" id="aMa-uD-mmb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="434" y="346"/>
+        </scene>
+        <!--iMasa-->
+        <scene sceneID="7cq-Kp-kse">
+            <objects>
+                <controller identifier="iMasa" id="Nzx-la-lAd" customClass="vistaMasa" customModule="WatchPizzasLuigi_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="SELECCIONA MASA" textAlignment="center" id="NcC-2S-Ulw">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                        </label>
+                        <button width="1" alignment="left" title="DELGADA" id="Hp0-Yh-6if">
+                            <connections>
+                                <action selector="badelgada" destination="Nzx-la-lAd" id="g1F-LR-z6a"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="GRUESA" id="d8N-Tk-fzR">
+                            <connections>
+                                <action selector="bagruesa" destination="Nzx-la-lAd" id="q1w-8C-wGN"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="CRUJIENTE" id="e2J-mm-tLb">
+                            <connections>
+                                <action selector="bacrujiente" destination="Nzx-la-lAd" id="pd3-DO-Q5s"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="bcrujiente" destination="e2J-mm-tLb" id="Scu-i3-eh2"/>
+                        <outlet property="bdelgada" destination="Hp0-Yh-6if" id="yLZ-9F-qoB"/>
+                        <outlet property="bgruesa" destination="d8N-Tk-fzR" id="o1P-cJ-FJu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="643" y="346"/>
+        </scene>
+        <!--iQueso-->
+        <scene sceneID="AQi-pl-udZ">
+            <objects>
+                <controller identifier="iQueso" id="gZr-Pr-akL" customClass="vistaQueso" customModule="WatchPizzasLuigi_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="SELECCIONA QUESO" textAlignment="center" id="O1p-x3-8C5">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                        </label>
+                        <button width="1" height="30" alignment="left" title="MOZZARELA" id="pCH-Kt-yJB">
+                            <connections>
+                                <action selector="bamozzarela" destination="gZr-Pr-akL" id="rha-X4-eQn"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="30" alignment="left" title="CHEDDAR" id="7EV-tB-lrn">
+                            <connections>
+                                <action selector="bacheddar" destination="gZr-Pr-akL" id="7Ig-z5-fp5"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="30" alignment="left" title="PARMESANO" id="V1v-Hs-hBm">
+                            <connections>
+                                <action selector="baparmesano" destination="gZr-Pr-akL" id="S9O-cp-EnP"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="30" alignment="left" title="SIN QUESO" id="FZP-Y0-3wc">
+                            <connections>
+                                <action selector="basinqueso" destination="gZr-Pr-akL" id="bbn-8J-Zck"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="849" y="346"/>
+        </scene>
+        <!--iIngrediente-->
+        <scene sceneID="ITO-Sh-pyA">
+            <objects>
+                <controller identifier="iIngrediente" id="LgJ-jZ-R7R" customClass="vistaIngrediente" customModule="WatchPizzasLuigi_WatchKit_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="INGREDIENTES" textAlignment="center" id="8o3-Wz-cKh">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                        </label>
+                        <button width="1" height="25" alignment="left" title="JAMÓN" id="98q-yQ-NB3">
+                            <connections>
+                                <action selector="bajamon" destination="LgJ-jZ-R7R" id="OMG-RJ-ToP"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="25" alignment="left" title="PEPERONI" id="XyZ-VY-Mjh">
+                            <connections>
+                                <action selector="bapeperoni" destination="LgJ-jZ-R7R" id="k4b-BW-gC4"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="25" alignment="left" title="PAVO" id="EBz-Zn-cqB">
+                            <connections>
+                                <action selector="bapavo" destination="LgJ-jZ-R7R" id="thF-7J-Orf"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="25" alignment="left" title="SALCHICHA" id="sRm-Gg-lF3">
+                            <connections>
+                                <action selector="basalchicha" destination="LgJ-jZ-R7R" id="OON-Xg-aKE"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="25" alignment="left" title="ACEITUNA" id="nbm-qj-IQS">
+                            <connections>
+                                <action selector="baaceituna" destination="LgJ-jZ-R7R" id="M8v-gp-ZUK"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="25" alignment="left" title="PIÑA" id="hih-Zd-IyW">
+                            <connections>
+                                <action selector="bapiña" destination="LgJ-jZ-R7R" id="q7X-WM-TmQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1062" y="345"/>
+        </scene>
+        <!--iConfirmacion-->
+        <scene sceneID="ceH-If-ppb">
+            <objects>
+                <controller identifier="iConfirmacion" id="8Cv-Bp-nKO" customClass="vistaConfirmacion" customModule="WatchPizzasLuigi_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Q1j-oK-76G">
+                            <items>
+                                <label alignment="left" text="TAMAÑO:" id="2tc-aP-ymy">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Label" id="lEh-sk-D9Q">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="CWr-dD-Urh"/>
+                        <group width="1" alignment="left" id="hlm-3Y-R4J">
+                            <items>
+                                <label alignment="left" text="MASA:" id="VEg-I8-ivp">
+                                    <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="Label" id="sLo-zn-UxS">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="U68-Ee-n03"/>
+                        <group width="1" alignment="left" id="f58-I4-qYe">
+                            <items>
+                                <label alignment="left" text="QUESO:" id="RLi-da-aiV">
+                                    <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Label" textAlignment="center" id="zhU-nk-jXo">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <separator alignment="left" id="JBg-Bs-uqS"/>
+                        <group width="1" alignment="left" id="oc7-jV-1S1">
+                            <items>
+                                <label alignment="left" text="INGREDIENTE:" id="1H0-bR-dqG">
+                                    <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Label" id="l8H-RD-i2v">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <separator alignment="left" id="S6t-OT-OcY"/>
+                        <button width="1" alignment="left" title="CONFIRMAR" id="ah7-7A-Zys">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="17"/>
+                            <connections>
+                                <segue destination="Kbn-fG-2Lb" kind="push" id="sw8-85-JhW"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="ingres" destination="l8H-RD-i2v" id="jfr-20-VmG"/>
+                        <outlet property="masres" destination="sLo-zn-UxS" id="s05-eu-tC9"/>
+                        <outlet property="queres" destination="zhU-nk-jXo" id="4Ce-HC-j7H"/>
+                        <outlet property="tamres" destination="lEh-sk-D9Q" id="auE-eM-NT4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1272" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Cuz-aL-2mu">
+            <objects>
+                <controller id="Kbn-fG-2Lb">
+                    <items>
+                        <label width="1" widthAdjustment="2" height="1" alignment="center" text="SU PIZZA ESTA EN EL HORNO." textAlignment="center" numberOfLines="0" id="XNY-Io-9bT"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1509" y="346"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +268,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchPizzasLuigi_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
