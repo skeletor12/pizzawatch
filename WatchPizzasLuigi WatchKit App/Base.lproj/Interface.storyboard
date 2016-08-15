@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -135,40 +135,55 @@
                             <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="boldSystem" pointSize="14"/>
                         </label>
-                        <button width="1" height="25" alignment="left" title="JAMÓN" id="98q-yQ-NB3">
+                        <switch width="1" alignment="left" title="JAMON" id="DPS-21-Z3m">
                             <connections>
-                                <action selector="bajamon" destination="LgJ-jZ-R7R" id="OMG-RJ-ToP"/>
+                                <action selector="switchJamonChange:" destination="LgJ-jZ-R7R" id="agv-qo-e8J"/>
                             </connections>
-                        </button>
-                        <button width="1" height="25" alignment="left" title="PEPERONI" id="XyZ-VY-Mjh">
+                        </switch>
+                        <switch width="136" alignment="left" title="PEPERRONI" id="Hgx-MG-VXj">
                             <connections>
-                                <action selector="bapeperoni" destination="LgJ-jZ-R7R" id="k4b-BW-gC4"/>
+                                <action selector="switchPepperoniChange:" destination="LgJ-jZ-R7R" id="FuU-wI-rXL"/>
                             </connections>
-                        </button>
-                        <button width="1" height="25" alignment="left" title="PAVO" id="EBz-Zn-cqB">
+                        </switch>
+                        <switch width="1" alignment="left" title="PAVO" id="Zii-8n-ajF">
                             <connections>
-                                <action selector="bapavo" destination="LgJ-jZ-R7R" id="thF-7J-Orf"/>
+                                <action selector="switchPavoChange:" destination="LgJ-jZ-R7R" id="QnW-eE-Iat"/>
                             </connections>
-                        </button>
-                        <button width="1" height="25" alignment="left" title="SALCHICHA" id="sRm-Gg-lF3">
+                        </switch>
+                        <switch width="1" alignment="left" title="SALCHICHA" id="id0-Lk-qtx">
                             <connections>
-                                <action selector="basalchicha" destination="LgJ-jZ-R7R" id="OON-Xg-aKE"/>
+                                <action selector="switchSalchichaChange:" destination="LgJ-jZ-R7R" id="3rY-QT-4W0"/>
                             </connections>
-                        </button>
-                        <button width="1" height="25" alignment="left" title="ACEITUNA" id="nbm-qj-IQS">
+                        </switch>
+                        <switch width="1" alignment="left" title="ACEITUNA" id="SNK-Mk-Qah">
                             <connections>
-                                <action selector="baaceituna" destination="LgJ-jZ-R7R" id="M8v-gp-ZUK"/>
+                                <action selector="switchAceitunaChange:" destination="LgJ-jZ-R7R" id="Vfh-xY-Slr"/>
                             </connections>
-                        </button>
-                        <button width="1" height="25" alignment="left" title="PIÑA" id="hih-Zd-IyW">
+                        </switch>
+                        <switch width="1" alignment="left" title="PIÑA" id="11l-HY-kBa">
                             <connections>
-                                <action selector="bapiña" destination="LgJ-jZ-R7R" id="q7X-WM-TmQ"/>
+                                <action selector="switchPiñaChange:" destination="LgJ-jZ-R7R" id="B0O-SP-ZrN"/>
+                            </connections>
+                        </switch>
+                        <label width="136" height="34.5" alignment="left" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.5" id="FgS-nI-U2A"/>
+                        <button width="1" alignment="left" title="CONTINUAR" id="MQX-ou-QDH">
+                            <connections>
+                                <action selector="continuar" destination="LgJ-jZ-R7R" id="f8A-4a-nPI"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="alerta" destination="FgS-nI-U2A" id="0Ui-1i-atY"/>
+                        <outlet property="sw_aceituna" destination="SNK-Mk-Qah" id="fhF-8N-p6y"/>
+                        <outlet property="sw_jamon" destination="DPS-21-Z3m" id="e79-M6-q5d"/>
+                        <outlet property="sw_pavo" destination="Zii-8n-ajF" id="6gs-7T-3It"/>
+                        <outlet property="sw_pepperoni" destination="Hgx-MG-VXj" id="cZY-LO-gsM"/>
+                        <outlet property="sw_pinha" destination="11l-HY-kBa" id="KoD-KX-7qH"/>
+                        <outlet property="sw_salchicha" destination="id0-Lk-qtx" id="nHC-FT-lYw"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1062" y="345"/>
+            <point key="canvasLocation" x="1062" y="352.5"/>
         </scene>
         <!--iConfirmacion-->
         <scene sceneID="ceH-If-ppb">

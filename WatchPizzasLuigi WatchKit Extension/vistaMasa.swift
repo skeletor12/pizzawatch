@@ -30,19 +30,19 @@ class vistaMasa: WKInterfaceController {
     
     
     @IBAction func badelgada() {
-        let tamanot = enviotamano(t:tamres, m:"DELGADA", q:"QUESO", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:"DELGADA", q:"QUESO", i:[])
         pushControllerWithName("iQueso", context: tamanot)
     }
     
     
     @IBAction func bagruesa() {
-        let tamanot = enviotamano(t:tamres, m:"GRUESA", q:"QUESO", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:"GRUESA", q:"QUESO", i:[])
         pushControllerWithName("iQueso", context: tamanot)
     }
     
     
     @IBAction func bacrujiente() {
-        let tamanot = enviotamano(t:tamres, m:"CRUJIENTE", q:"QUESO", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:"CRUJIENTE", q:"QUESO", i:[])
         pushControllerWithName("iQueso", context: tamanot)
     }
 

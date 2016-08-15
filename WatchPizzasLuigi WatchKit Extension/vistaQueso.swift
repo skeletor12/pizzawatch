@@ -27,25 +27,25 @@ class vistaQueso: WKInterfaceController {
 
     
     @IBAction func bamozzarela() {
-        let tamanot = enviotamano(t:tamres, m:masres, q:"MOZZARELA", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:masres, q:"MOZZARELA", i:[])
         pushControllerWithName("iIngrediente", context: tamanot)
     }
     
     
     @IBAction func bacheddar() {
-        let tamanot = enviotamano(t:tamres, m:masres, q:"CHEDDAR", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:masres, q:"CHEDDAR", i:[])
         pushControllerWithName("iIngrediente", context: tamanot)
     }
     
     
     @IBAction func baparmesano() {
-        let tamanot = enviotamano(t:tamres, m:masres, q:"PARMESANO", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:masres, q:"PARMESANO", i:[])
         pushControllerWithName("iIngrediente", context: tamanot)
     }
     
     
     @IBAction func basinqueso() {
-        let tamanot = enviotamano(t:tamres, m:masres, q:"SIN QUESO", i:"INGREDIENTE")
+        let tamanot = enviotamano(t:tamres, m:masres, q:"SIN QUESO", i:[])
         pushControllerWithName("iIngrediente", context: tamanot)
     }
     

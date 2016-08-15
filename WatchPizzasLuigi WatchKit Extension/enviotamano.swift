@@ -13,13 +13,13 @@ class enviotamano: NSObject {
     var tamanot: String = ""
     var masat: String = ""
     var quesot: String = ""
-    var ingredientet: String = ""
+    var ingredientet: [String] = []
     
-    init(t:String,m:String,q:String,i:String) {
+    init(t:String, m:String, q:String, i: [String]) {
         tamanot=t
         masat=m
         quesot=q
-        ingredientet=i
+        ingredientet = i
     }
-
+    
 }
